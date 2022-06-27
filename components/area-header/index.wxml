@@ -1,0 +1,9 @@
+<!--components/area-header/index.wxml-->
+<view class="header">
+  <view class="title">{{title}}</view>
+  <view class="slot"><slot></slot></view>
+  <view class="default" wx:if="{{showMore}}" bindtap="handleTapMore">
+    <text>{{moreText}}</text>
+    <text>></text>
+  </view>
+</view>

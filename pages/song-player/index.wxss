@@ -1,0 +1,99 @@
+/* pages/song-player/index.wxss */
+page {
+  color: #fff;
+  box-sizing: border-box;
+}
+.bg-image {
+  width: 100%;
+  height: 100%;
+}
+.bg-image,.bg-cover {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0,0,0,.5);
+  backdrop-filter: blur(10px);
+  z-index: -1;
+}
+.default {
+  color: grey;
+}
+.active {
+  color: #fff;
+}
+.swiper {
+  padding: 30rpx 20rpx;
+}
+.music {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.music .image {
+  width: 100%;
+  height: 80%;
+  flex: 5;
+  border-radius: 10rpx;
+}
+.music .lyric {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.music .info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+.music .info .info-more {
+  font-size: 24rpx;
+}
+.music .process {
+  width: 100%;
+}
+.music .process .time {
+  font-size: 30rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.music .info .name {
+  font-size: 60rpx;
+}
+.music .operation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.music .operation .btn {
+  width: 60rpx;
+  margin-right: 50rpx;
+}
+.music .operation .btn-play {
+  width: 120rpx;
+}
+.music .operation .btn-music {
+  margin-right: 0rpx;
+}
+.lyric .scroll {
+  height: 100%;
+}
+.scroll-content {
+  color: grey;
+}
+.lyric-default {
+  height: 35px;
+  line-height: 35px;
+  width: calc(100vw - 20px);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: flex;
+  justify-content: center;
+}
+.lyric-active {
+  color: green;
+  font-size: 50rpx;
+}

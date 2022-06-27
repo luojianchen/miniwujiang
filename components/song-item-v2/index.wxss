@@ -1,0 +1,7 @@
+/* components/song-item-v2/index.wxss */
+.song-item {
+  display: flex;
+}
+.song-item .image {
+  width: 24rpx;
+}

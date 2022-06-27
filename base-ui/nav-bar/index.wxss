@@ -1,0 +1,25 @@
+/* base-ui/nav-bar/index.wxss */
+.nav-bar {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.left,.right {
+  width: 120rpx;
+}
+.center {
+  flex: 1;
+}
+.left-default {
+  display: none
+}
+.left-slot:empty + .left-default {
+  display: block;
+}
+.center-default {
+  display: none
+}
+.center-slot:empty + .center-default {
+  display: block;
+}

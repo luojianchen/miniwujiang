@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/home-music/index",
+    "pages/home-video/index",
+    "pages/detail-video/index",
+    "pages/detail-search/index",
+    "pages/detail-song/index",
+    "pages/song-player/index",
+    "pages/home-profile/index"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home-music/index",
+        "iconPath": "assets/images/tabbar/music_normal.png",
+        "text": "首页",
+        "selectedIconPath": "assets/images/tabbar/music_active.png"
+      },
+      {
+        "pagePath": "pages/home-video/index",
+        "iconPath": "assets/images/tabbar/video_normal.png",
+        "text": "视频",
+        "selectedIconPath": "assets/images/tabbar/video_active.png"
+      },
+      {
+        "pagePath": "pages/home-profile/index",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "requiredBackgroundModes": [
+    "audio"
+  ]
+}

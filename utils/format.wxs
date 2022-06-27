@@ -1,0 +1,26 @@
+//定义两个函数转化时间和观看人数
+function formatCount (count) {
+  count = parseInt(count)
+  if(count > 100000000) {
+    return (count / 100000000).toFixed(1) + "亿"
+  } else if(count > 10000) {
+    return (count / 10000).toFixed(1) + "万"
+  } else {
+    return count + ""
+  }
+}
+function addZero (time) {
+  time = time.toString()
+  return ("00"+time).slice(time.length)
+}
+function formatDuration(duration) {
+  duration = parseInt(duration / 1000)
+  var minute = Math.floor(duration / 60)
+  var second = duration % 60
+  return addZero(minute) + ":"+addZero(second)
+}
+
+module.exports = {
+  formatCount: formatCount,
+  formatDuration: formatDuration
+}

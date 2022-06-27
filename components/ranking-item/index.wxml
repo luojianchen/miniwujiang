@@ -1,0 +1,14 @@
+<!--components/ranking-item/index.wxml-->
+<wxs src="/utils/format.wxs" module="format"></wxs>
+<view class="ranking-item">
+  <view class="left">
+    <view>{{item.name}}</view>
+    <block wx:for="{{item.songs}}" wx:key="id" wx:for-item="itex" wx:for-index="indey">
+      <view class="song">{{indey+1}} . {{itex.name}} - {{itex.ar[0].name}}</view>
+    </block>
+  </view>
+  <view class="right">
+    <image class="image" src="{{item.coverImgUrl}}" mode="widthFix"></image>
+    <view class="play-count">{{format.formatCount(item.playCount)}}</view>
+  </view>
+</view>

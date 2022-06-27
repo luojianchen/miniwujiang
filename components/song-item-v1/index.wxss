@@ -1,0 +1,17 @@
+/* components/song-item-v1/index.wxss */
+.song-item {
+  display: flex;
+  align-items: center;
+  margin-top: 20rpx;
+}
+.image {
+  width: 140rpx;
+  border-radius: 10rpx;
+  margin-right: 20rpx;
+}
+.song-info {
+  flex: 1;
+}
+.more {
+  width: 120rpx;
+}

@@ -1,0 +1,29 @@
+/* components/ranking-item/index.wxss */
+.ranking-item {
+  display: flex;
+  justify-content: space-around;
+}
+.ranking-item .left {
+  flex: 1;
+  font-size: 36rpx;
+}
+.ranking-item .left .song {
+  font-size: 24rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ranking-item .right {
+  width: 220rpx;
+  position: relative;
+}
+.ranking-item .right .image {
+  width: 100%;
+}
+.ranking-item .right .play-count {
+  position: absolute;
+  right: 10rpx;
+  bottom: 10rpx;
+  color: #fff;
+  font-size: 20rpx;
+}

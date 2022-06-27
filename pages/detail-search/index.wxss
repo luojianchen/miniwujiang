@@ -1,0 +1,25 @@
+/* pages/detail-search/index.wxss */
+page {
+  padding-top: 54px;
+}
+.search {
+  position: fixed;
+  left: 20rpx;
+  right: 20rpx;
+  top: 0;
+}
+.hot-item:first-of-type {
+  color: green;
+}
+.hot-item {
+  margin-right: 20rpx;
+}
+.search-result {
+  display: flex;
+  align-items: center;
+  margin-top: 20rpx;
+  font-size: 36rpx;
+}
+.search-result .search-icon {
+  width: 50rpx;
+}

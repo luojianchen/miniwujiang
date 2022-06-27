@@ -1,0 +1,31 @@
+/* components/video-item-v1/index.wxss */
+.video-item {
+  width: 100%;
+  margin-top: 10px;
+}
+.album {
+  position: relative;
+}
+.count {
+  width: 100%;
+  position: absolute;
+  padding: 0 10rpx;
+  bottom: 2px;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 24rpx;
+}
+.image {
+  position: relative;
+  width: 100%;
+  border-radius: 5px;
+}
+.info {
+  font-size: 28rpx;
+  overflow:hidden; 
+text-overflow:ellipsis;
+display:-webkit-box; 
+-webkit-box-orient:vertical;
+-webkit-line-clamp:2; 
+}

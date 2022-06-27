@@ -1,0 +1,50 @@
+/* pages/home/index.wxss */
+.swiper {
+  border-radius: 5px;
+  overflow: hidden;
+  transform: translateY(0);
+}
+.swiper-item {
+  display: flex;
+}
+.image {
+  width: 100%;
+}
+.play-music {
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  height: 44px;
+  align-items: center;
+  box-shadow: 0 -1px 5px rgba(0,0,0,.1);
+}
+.play-music .right,.play-music .left {
+  display: flex;
+  align-items: center;
+}
+.play-music .left .image {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  position: relative;
+  top: -10px;
+}
+@keyframes romateAnimate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.image-animate {
+  animation: romateAnimate 10s linear infinite;
+}
+.play-bar-placeholder {
+  height: 44px;
+  width: 100%;
+}
